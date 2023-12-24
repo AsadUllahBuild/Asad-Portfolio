@@ -309,6 +309,51 @@ body {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .about-img {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .about-text {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .about-text h2 span {
+        color: #0ef;
+        margin-top: 40px;
+    }
+
+    .about-text h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: justify;
+    }
+}
+
+
+
 #services {
     color: aliceblue;
     font-size: 20px;
@@ -395,17 +440,58 @@ body {
     transform: translateY(-10px);
 }
 
+/* Mobile-specific styles for services section using media query */
+@media screen and (max-width: 768px) {
+    #services {
+        font-size: 16px; /* Adjust as needed */
+        margin-bottom: 3rem; /* Adjust as needed */
+    }
+
+    .sub-title {
+        font-size: 30px; /* Adjust as needed */
+        padding-bottom: 20px; /* Adjust as needed */
+    }
+
+    .container {
+        padding: 20px; /* Adjust as needed */
+    }
+
+    .services-list {
+        grid-gap: 30px; /* Adjust as needed */
+    }
+
+    .services-list div {
+        padding: 20px; /* Adjust as needed */
+        font-size: 14px; /* Adjust as needed */
+    }
+
+    .services-list div i {
+        font-size: 30px; /* Adjust as needed */
+        margin-bottom: 15px; /* Adjust as needed */
+    }
+
+    .services-list div h2 {
+        font-size: 20px; /* Adjust as needed */
+    }
+
+    .services-list div a {
+        font-size: 12px; /* Adjust as needed */
+        margin-top: 15px; /* Adjust as needed */
+    }
+}
+@media screen and (max-width: 430px) {
+    .services-list {
+        display: flex;
+        flex-direction: column; /* Change to flex column */
+        align-items: center; /* Optional: Adjust alignment */
+        gap: 20px; /* Adjust as needed */
+    }
+}
+
+
 .section1 {
     display: flex;
     /* flex-wrap: wrap; */
-}
-
-@media (max-width: 768px) {
-    .section1 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .container1 {
@@ -672,6 +758,40 @@ body {
     opacity: 0;
 }
 
+/* Existing styles... */
+
+/* Media query for max-width: 768px */
+@media screen and (max-width: 768px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        /* Additional styles... */
+    }
+
+    .container1 {
+        width: 100%; /* Or adjust the width according to your layout needs */
+        margin-left: 0;
+        padding: 80px; /* Or modify the padding */
+        /* Additional styles... */
+    }
+
+}
+
+/* Media query for max-width: 430px */
+@media screen and (max-width: 430px) {
+    .container1 {
+        /* Adjust the width for smaller screens */
+        width: 90%; /* Example: 90% of the viewport width */
+        padding: 20px;
+        align-items: center; /* Or modify the padding */
+        /* Additional styles... */
+    }
+
+}
+
+
 
 
 .main-text {
@@ -769,6 +889,47 @@ body {
 .row:hover .layer {
     height: 100%;
 }
+
+/* For screens up to 768px */
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+    .portfolio-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    
+    }
+
+    .row {
+        width: 100%;
+
+    }
+
+    .row img {
+        width: 100%; /* Adjust image width */
+        height:450px; /* Maintain aspect ratio */
+        border-radius: 8px;
+    }
+
+    .layer {
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+
+/* For screens up to 430px */
+@media screen and (max-width: 430px) {
+    .portfolio-content {
+        gap: 20px; /* Remove gap between items */
+    }
+    .row img {
+        width: 100%; /* Adjust image width */
+        height:250px; /* Maintain aspect ratio */
+        border-radius: 8px;
+    }
+}
+
 
 .contact {
     display: grid;
