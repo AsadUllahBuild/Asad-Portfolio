@@ -11,6 +11,7 @@ body {
     background-color: #081b29;
 }
 
+
 .header {
     position: fixed;
     top: 0;
@@ -60,6 +61,7 @@ body {
 
 /* Mobile-specific styles using media query */
 @media (max-width: 767px) {
+
     /* Hide the nav links by default */
     .nav-links {
         display: none;
@@ -84,9 +86,11 @@ body {
     .change .line:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
+
     .change .line:nth-child(2) {
         opacity: 0;
     }
+
     .change .line:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
@@ -98,7 +102,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./assets/portfolio\ background.png) no-repeat;
+    background-color: #081b29;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -193,41 +197,6 @@ body {
         0 0 100px cyan, 0 0 200px cyan;
 
 }
-
-/* Mobile responsiveness */
-@media (max-width: 767px) {
-    .home {
-        padding: 50px 10px; /* Adjusted padding for smaller screens */
-        background-size: contain; /* Adjust background size for smaller screens */
-    }
-
-    .home-content {
-        max-width: 90%; /* Adjusted max-width for smaller screens */
-    }
-
-    .home-content h3,
-    .home-content h1,
-    .home-content p,
-    .home-sci a,
-    .btn-box {
-        opacity: 1; /* Ensuring content is visible on smaller screens */
-        animation: none; /* Removing animations on smaller screens */
-    }
-}
-
-/* Tablet responsiveness */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .home {
-        padding: 60px 5%; /* Adjusted padding for tablets */
-        background-size: cover; /* Adjust background size for tablets */
-    }
-
-    .home-content {
-        max-width: 80%; /* Adjusted max-width for tablets */
-    }
-}
-
-
 
 .about {
     display: grid;
@@ -369,11 +338,11 @@ body {
 
 @media (max-width: 768px) {
     .section1 {
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-  }
+}
 
 .container1 {
     width: 600px;
@@ -677,7 +646,7 @@ body {
     height: 400px;
     display: block;
     transition: transform 0.5s;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 8px;
     margin-right: 10px;
     width: 500px;
