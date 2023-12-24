@@ -86,6 +86,9 @@ body {
     .nav-links a:hover {
         background-color: #0ef;
     }
+    .navbar {
+        margin-right: 40px;
+    }
 
     .hamburger-menu {
         display: block;
@@ -220,14 +223,15 @@ body {
 /* Media Query for Max Width 768px */
 @media screen and (max-width: 768px) {
     .home {
-        padding: 50px 5% 0;
+        padding: 10px 5% 0;
         flex-direction:column-reverse;
         align-items: center;
+        margin-top: 0px;
     }
 
     .home-image {
-        width: 70%;
-        margin-bottom: 20px;
+        width: 80%;
+        margin-bottom: 0px;
     }
 
     .home-image img {
@@ -477,6 +481,16 @@ body {
     .services-list div a {
         font-size: 12px; /* Adjust as needed */
         margin-top: 15px; /* Adjust as needed */
+    }
+    .sub-title {
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 30px;
+        margin-top: 100px;
+    }
+    
+    .sub-title span {
+        color: #0ef;
     }
 }
 @media screen and (max-width: 430px) {
@@ -773,8 +787,19 @@ body {
     .container1 {
         width: 100%; /* Or adjust the width according to your layout needs */
         margin-left: 0;
-        padding: 80px; /* Or modify the padding */
+        padding: 80px;
+         /* Or modify the padding */
         /* Additional styles... */
+    }
+    .sub-title {
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 30px;
+        margin-top: 100px;
+    }
+    
+    .sub-title span {
+        color: #0ef;
     }
 
 }
@@ -827,10 +852,9 @@ body {
 }
 
 .row img {
-    height: 400px;
+    height: 300px;
     display: block;
     transition: transform 0.5s;
-    object-fit: cover;
     border-radius: 8px;
     margin-right: 10px;
     width: 500px;
@@ -915,6 +939,21 @@ body {
     .layer {
         padding: 20px; /* Adjust padding */
     }
+    .main-text {
+        padding-top: 30px;
+        margin-top: 150px;
+        align-items: center;
+    }
+    
+    .main-text h2 {
+        font-size: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+    
+    .main-text h2 span {
+        color: #0ef;
+    }
 }
 
 
@@ -927,6 +966,21 @@ body {
         width: 100%; /* Adjust image width */
         height:250px; /* Maintain aspect ratio */
         border-radius: 8px;
+    }
+    .main-text {
+        margin-top: 80px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .main-text h2 {
+        font-size: 40px;
+        line-height: 1;
+        text-align: center;
+    }
+    
+    .main-text h2 span {
+        color: #0ef;
     }
 }
 
@@ -1057,6 +1111,34 @@ form textarea {
         0 0 100px cyan, 0 0 200px cyan;
 }
 
+@media screen and (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 60px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .contact-list {
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
+
 .last-text p {
     width: 100%;
     text-align: center;
@@ -1079,7 +1161,25 @@ form textarea {
     padding: 10px;
     border-radius: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+    .last-text p {
+        padding: 15px 0;
+        margin-top: 40px;
+    }
 
+    .top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .top i {
+        font-size: 28px;
+        padding: 8px;
+        margin-right: 10px;
+
+    }
+    /* Adjust other styles as needed for smaller screens */
+}
 
 
 
