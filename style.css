@@ -939,6 +939,18 @@ body {
     .layer {
         padding: 20px; /* Adjust padding */
     }
+    .layer p {
+        color: #000000;
+        font-size: 24px;
+        line-height: 1.0;
+    }
+    .layer h5 {
+        color: #000000;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
     .main-text {
         padding-top: 30px;
         margin-top: 150px;
@@ -966,6 +978,17 @@ body {
         width: 100%; /* Adjust image width */
         height:250px; /* Maintain aspect ratio */
         border-radius: 8px;
+    }
+    .layer p {
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.0;
+    }
+    .layer h5 {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
     }
     .main-text {
         margin-top: 80px;
