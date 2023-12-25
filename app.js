@@ -6,6 +6,7 @@ var typed = new Typed(".text", {
     loop: true
 });
 
+// Toggle hamburger menu and navigation links
 
 document.querySelector('.hamburger-menu').addEventListener('click', function() {
     this.classList.toggle('change');
